@@ -1,7 +1,8 @@
-import Sidebar from "./Sidebar";
-import AppAbout from "./About"
-import ContentContainer from "./Content"
+import Sidebar from "./components/Sidebar";
+import AppAbout from "./components/About"
 import { Layout } from 'antd';
+import AppHome from "./components/Home";
+import AppWorks from "./components/Works";
 
 const Content = Layout;
 
@@ -11,7 +12,9 @@ export default function App() {
     <div className="flex">
       <Sidebar />
       <Content>
+        <AppHome />
         <AppAbout />
+        <AppWorks />
       </Content>
     </div>
   

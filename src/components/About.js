@@ -28,7 +28,7 @@ function AppAbout() {
     <div id="about" className="block aboutBlock">
       <div className="container-fluid">
         <div className="titleHolder">
-          <h2>About Us</h2>
+          <h2>About me</h2>
           <p>dolor sit amet, consectetur adipisicing elit</p>
         </div>
         <div className="contentHolder">
