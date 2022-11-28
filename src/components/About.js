@@ -6,14 +6,14 @@ const { Meta } = Card;
 
 function AppAbout() {
   return (
-    <div id="about" className="block featureBlock bgGray">
-      <div className="container-fluid">
+    <div id="about" className="block bgGray">
+      <div className="container-fluid bg">
         <div className="titleHolder">
           <h2 class>About me</h2>
 
-          <div className='proy'>
+          <div className='box'>
 
-            <div className='proyText'>
+            <div className='box-text'>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 
             </div>
