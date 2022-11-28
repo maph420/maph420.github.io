@@ -9,6 +9,7 @@
     .sidebar-tooltip {
         @apply absolute w-auto h-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md text-white bg-gray-900 text-xs font-bold transition-all duration-100 scale-0 origin-left;
     }
+
     
     body {
         font-size: 16px;
@@ -220,6 +221,7 @@
       ----- 
       */
       .block {
+        margin-left: 4rem;
         padding: 60px 0;
         border-bottom: 2px solid #334155 ;
       }
@@ -228,12 +230,15 @@
       about
       ----- 
       */
+
       .aboutBlock .contentHolder {
+
         position: relative;
         text-align: center;
       }
       
       .aboutBlock .icon {
+        position: relative;
         font-size: 40px;
         color: #1890ff;
         margin: 0 0 10px;
@@ -241,6 +246,10 @@
       
       .aboutBlock .content {
         text-align: center;
+      }
+
+      .aboutBlock {
+        margin-left:5.75rem
       }
       
       /* 

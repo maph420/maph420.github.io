@@ -10,8 +10,8 @@ const Content = Layout;
 export default function App() {
   return (
     <div className="flex">
-      <Sidebar />
       <Content>
+        <Sidebar />
         <AppHome />
         <AppAbout />
         <AppWorks />
