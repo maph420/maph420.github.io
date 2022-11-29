@@ -2,23 +2,28 @@ import React from 'react';
 
 import { Row, Col } from 'antd';
 import { Card } from 'antd';
+
 const { Meta } = Card;
+
+
 
 function AppHome() {
   return (
     <div id="home" className="block featureBlock bgGray">
       <div className="container-fluid bg">
-        <div className="titleHolder">
-          <h2 class="title">Home</h2>
+    
+            <img class='user-img' src='https://preview.redd.it/jzqjaawvivv61.png?width=631&format=png&auto=webp&s=be4f35d0379f5fcd4e15792e77634de30e1b5ed4' />  
+    
+          <div class="info-container">
+            <h2 class="title">maph420</h2>
+            <p>jhasdkjashkjdashjkdajskh</p>
+            <p>jhasdkjashkjdashjkdajskh</p>
+            <p>jhasdkjashkjdashjkdajskh</p>
+            <p>jhasdkjashkjdashjkdajskh</p>
+            <p>jhasdkjashkjdashjkdajskh</p>
+            <p>jhasdkjashkjdashjkdajskh</p>
+          </div>
 
-          <div className='box'>
-
-            <div className='box-text'>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-
-            </div>
-          </div>   
-        </div>
       </div> 
     </div>
         
