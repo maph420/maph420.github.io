@@ -30,6 +30,21 @@
       font-size: 16px;
       line-height: 1.6;
     }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+        margin-bottom: 1%;
+    }
+
+    .centered {
+        text-align: center;
+        display: table;
+        margin: 0 auto;
+    }
     
     /* info boxes
     */
@@ -39,27 +54,32 @@
         max-width: 80%;
         padding-top: 0px;
         padding: 1%;
-
+        height:100%;
+        width: 100;
 
         box-shadow: 7.5px 7.5px 3.75px #42546c42;
         border-radius: 25px;
         color: #d8e1e7;
         background-color:#334155;
+        
+        overflow: visible;
     }
 
     /* page sector
     */
     .sector {
+        width: auto;
         margin-left: 4rem;
         padding: 60px 0;
         border-bottom: 2px solid #334155 ; /*?*/
-        background-image: url("/public/im/stars_bg.jpg");
+        background-image: url("im/stars_bg.jpg");
+        overflow: visible;
     }
 
     /* home
     */
     .user-img-container {
-        width:200px;
+        width:40%;
         height: auto;
     }
 
@@ -77,27 +97,16 @@
     }
 
     .user-info {
-      margin-left:2%;
+        margin-left:2%;
     }
 
+   .stack-logo {
+    width:7%;
+    height:7%;
+    padding: 0 1%;
+    padding-top: 1%;
+   }
 
-    .centered {
-        text-align: center;
-        display: table;
-        margin: 0 auto;
-    }
-
-    .title {
-        font-size: 28px;
-    }
-
-    .subtitle {
-        font-size: 20px;
-        margin-bottom: 1%;
-    }
-     
-    /* works
-    */
     .box-text {
         position: relative; 
         display: block;
