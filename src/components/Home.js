@@ -6,24 +6,50 @@ import HTMLLogo from "../im/stack/HTML.png"
 import javaScriptLogo from "../im/stack/javascript.png"
 import mongoLogo from "../im/stack/mongo.png"
 import pythonLogo from "../im/stack/python.png"
-import streamlitLogo from "../im/stack/streamlit.png"
-import streamlitLogoAlt from "../im/stack/streamlitalt.png"
+import reactLogo from "../im/stack/react.png"
+import gitLogo from "../im/stack/git.png"
+import streamlitLogolAlt from "../im/stack/st2.png"
+import mySQLLogo from "../im/stack/mySQL.png"
 
+const anotherStack = [
+  {
+    im: bashLogo, name: "Bash"
+  },
+  {
+    im: CLogo, name: "C"
+  },
+  {
+    im: HTMLLogo, name: "HTML"
+  },
+  {
+    im: javaScriptLogo, name: "JavaScript"
+  },
+  {
+    im: mongoLogo, name: "MongoDB"
+  },
+  {
+    im: pythonLogo, name: "Python"
+  },
+  {
+    im: reactLogo, name: "React"
+  },
+  {
+    im: gitLogo, name: "Git"
+  },
+  {
+    im: streamlitLogolAlt, name: "Streamlit"
+  },
+  {
+    im: mySQLLogo, name: "MySQL"
+  }
 
-const myStack = [
-  bashLogo,
-  CLogo,
-  HTMLLogo,
-  javaScriptLogo,
-  mongoLogo,
-  pythonLogo,
 ];
 
 
 const StackRow = ({stack}) => (
-  <div>
-    {stack.map(stackElem => (
-      <img class="stack-logo" src={`${stackElem}`} alt="stack element"></img>
+  <div class="stack-div">
+    {stack.map((stackElem) => (
+      <img title={stackElem.name} class="stack-logo" src={`${stackElem.im}`} alt="stack element"></img>
     ))}
   </div>
 );
@@ -40,14 +66,11 @@ function AppHome() {
 
         <div class="user-info">
           <h2 class="user-name title">maph420</h2>
-          <p class="user-text">jhasdkjashkjdashjkdajskh</p>
-          <p class="user-text">jhasdkjashkjdashjkdajskh</p>
-          <p class="user-text">jhasdkjashkjdashjkdajskh</p>
-          <p class="user-text">jhasdkjashkjdashjkdajskh</p>
-          <p class="user-text">jhasdkjashkjdashjkdajskh</p>
-          <div class="stack-div">
-            <StackRow stack={myStack}></StackRow>
-          </div>
+          <p class="user-text subtitle">‍💻 IT Technician</p>
+          <p class="user-text">👤 18 yo</p>
+          <p class="user-text">📚 My current stack contains:</p>
+          
+          <StackRow stack={anotherStack}></StackRow>
           
         </div>
 

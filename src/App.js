@@ -17,8 +17,5 @@ export default function App() {
         <AppWorks />
       </Content>
     </div>
-  
-
-    
   )
 }
