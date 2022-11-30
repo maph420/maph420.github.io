@@ -7,6 +7,7 @@ import javaScriptLogo from "../im/stack/javascript.png"
 import mongoLogo from "../im/stack/mongo.png"
 import pythonLogo from "../im/stack/python.png"
 import streamlitLogo from "../im/stack/streamlit.png"
+import streamlitLogoAlt from "../im/stack/streamlitalt.png"
 
 
 const myStack = [
@@ -16,7 +17,6 @@ const myStack = [
   javaScriptLogo,
   mongoLogo,
   pythonLogo,
-  streamlitLogo
 ];
 
 
@@ -40,11 +40,11 @@ function AppHome() {
 
         <div class="user-info">
           <h2 class="user-name title">maph420</h2>
-          <p>jhasdkjashkjdashjkdajskh</p>
-          <p>jhasdkjashkjdashjkdajskh</p>
-          <p>jhasdkjashkjdashjkdajskh</p>
-          <p>jhasdkjashkjdashjkdajskh</p>
-          <p>jhasdkjashkjdashjkdajskh</p>
+          <p class="user-text">jhasdkjashkjdashjkdajskh</p>
+          <p class="user-text">jhasdkjashkjdashjkdajskh</p>
+          <p class="user-text">jhasdkjashkjdashjkdajskh</p>
+          <p class="user-text">jhasdkjashkjdashjkdajskh</p>
+          <p class="user-text">jhasdkjashkjdashjkdajskh</p>
           <div class="stack-div">
             <StackRow stack={myStack}></StackRow>
           </div>
