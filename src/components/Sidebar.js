@@ -1,13 +1,10 @@
 import {BsPersonCircle} from "react-icons/bs";
-import { IoFolderOpenSharp } from "react-icons/io5";
 import {FaHome} from "react-icons/fa";
 import {FaRegFolderOpen} from "react-icons/fa"
 
 const Sidebar = () => {
     return (
-        // con pt-x bajamos un poco la barra
         <div className="fixed top-0 left-0 h-screen m-0 flex flex-col bg-primary text-secondary sidebar-class w-16">
-        
         <SideBarIcon icon={<FaHome size="28" />} text="Home" anchor="#home" />
          <SideBarIcon icon={<BsPersonCircle size="28" />} text="About" anchor="#about"/>
          <SideBarIcon icon={<FaRegFolderOpen size="28" />} text="Works" anchor="#works" />
@@ -25,6 +22,5 @@ const SideBarIcon = ({icon, text = 'tooltip', anchor = '#' }) => (
     </div>
     </a>
 );
-
 
 export default Sidebar

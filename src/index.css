@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer components {
+
+    /* tailwind sidebar
+    */
     .sidebar-icon {
         @apply relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto hover:bg-green-500 bg-slate-600 rounded-xl hover:rounded-3xl transition-all duration-300 ease-linear cursor-pointer;
     }
@@ -10,8 +13,10 @@
         @apply absolute w-auto h-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md text-white bg-gray-900 text-xs font-bold transition-all duration-100 scale-0 origin-left;
     }
 
+    /* general settings
+    */
     html {
-      scroll-behavior: smooth;
+        scroll-behavior: smooth;
     }
 
     body {
@@ -19,494 +24,84 @@
         line-height: 1.6;
         color: #333;
         overflow-x: hidden;
-      }
-      
-      .container-fluid {
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    
+    /* info boxes
+    */
+    .info-box {
         display: flex;
         margin: 0 auto;
         max-width: 80%;
         padding-top: 0px;
         padding: 1%;
-      }
-      
-      .info-container {
-        margin-left:2%;
-      }
 
-      .ant-layout {
-        background: #fff !important;
-      }
-      
-      .mainLayout .ant-layout-header {
-        background: #f8f8f8;
-        padding: 0;
-        height: auto;
-        line-height: 1.6;
-      }
-      
-      p {
-        font-size: 16px;
-        line-height: 1.6;
-      }
-      
-      .bgGray {
-        background-image: url("/public/im/0574b2f331d34f40827b6f5fe2e38d4fGBEhFxXXKcHgSkJY-0.jpg");
-      }
-      
-      /* 
-      title holder
-      ------------
-      */
-     
-      .user-img {
-        display: block;
-        width:15%;
-        height:15%;
-        border-radius: 50%;
-      }
- 
 
-      .title {
-        font-weight: bold;
-        font-size:26px;
-        display: flex;
-        margin-right: auto;
-      }
-      
-      .text {
-        display: flex;
-        margin-right: auto;
-      }
-
-      /*
-      .title {
-        display: block;
-        margin-right: auto;
-      }
-      */
-    
-      .titleHolder {
-        text-align: center;
-        display: table;
-        margin: 0 auto;
-      }
-      
-      
-      .titleHolder h2 {
-        font-size: 28px;
-        margin: 0;
-      }
-      
-      /* 
-      header
-      ------ 
-      */
-      .ant-layout-header {
-        position: fixed;
-        left: 0;
-        right: 0;
-        z-index: 999;
-      }
-      
-      .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px 0;
-      }
-      
-    
-      
-      .header .ant-anchor-link:before,
-      .header .ant-anchor-link:after {
-        content: '';
-        background: #1890ff;
-        width: 1px;
-        position: absolute;
-        top: 2px;
-        bottom: 2px;
-        left: 30%;
-        opacity: 0;
-        transition: all 0.3s linear;
-      }
-      
-      .header .ant-anchor-link:after {
-        left: auto;
-        right: 30%;
-      }
-      
-      .header .ant-anchor-link.ant-anchor-link-active:before,
-      .header .ant-anchor-link:hover:before {
-        left: 5%;
-        opacity: 1;
-      }
-      
-      .header .ant-anchor-link.ant-anchor-link-active:after,
-      .header .ant-anchor-link:hover:after {
-        right: 5%;
-        opacity: 1;
-      }
-      
-      /* ant menu */
-      .header .ant-menu {
-        border: 0;
-        background: none !important;
-      }
-      
-      .header .ant-menu li.ant-menu-item {
-        position: relative;
-        color: #333;
-      }
-      
-      .header .ant-menu li.ant-menu-item:before,
-      .header .ant-menu li.ant-menu-item:after {
-        content: '';
-        background: #1890ff;
-        width: 1px;
-        position: absolute;
-        top: 2px;
-        bottom: 2px;
-        left: 30%;
-        opacity: 0;
-        transition: all 0.3s linear;
-      }
-      
-      .header .ant-menu li.ant-menu-item:after {
-        left: auto;
-        right: 30%;
-      }
-      
-      .header .ant-menu li.ant-menu-item,
-      .header .ant-menu li.ant-menu-item-selected {
-        border: 0 !important;
-      }
-      
-      .header .ant-menu li.ant-menu-item-selected,
-      .header .ant-menu li.ant-menu-item:hover {
-        color: #1890ff;
-        background: none;
-      }
-      
-      .header .ant-menu li.ant-menu-item-selected:before,
-      .header .ant-menu li.ant-menu-item:hover:before {
-        left: 5%;
-        opacity: 1;
-      }
-      
-      .header .ant-menu li.ant-menu-item-selected:after,
-      .header .ant-menu li.ant-menu-item:hover:after {
-        right: 5%;
-        opacity: 1;
-      }
-      
-      /* 
-      hero
-      ---- 
-      */
-      .heroBlock {
-        background: url('assets/images/bg-hero.jpg') no-repeat;
-        background-position: 50% 100%;
-        background-size: cover;
-        height: 100vh;
-      }
-      
-      
-      
-      .heroBlock .ant-carousel,
-      .heroBlock .ant-carousel div {
-        height: 100%;
-      }
-      
-      .heroBlock .slick-dots li button {
-        background: #000 !important;
-      }
-      
-      .heroBlock .slick-dots li.slick-active button {
-        background: #1890ff !important;
-      }
-      
-      .heroBlock .content {
-        max-width: 640px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 0 0 70px;
-      }
-      
-      .heroBlock h3 {
-        font-size: 30px;
-        line-height: 1.2;
-        margin: 0 0 30px;
-      }
-      
-      .heroBlock p {
-        margin: 0 0 30px;
-      }
-      
-      .heroBlock .btnHolder {
-        height: auto !important;
-      }
-      
-      .heroBlock .btnHolder button,
-      .heroBlock .btnHolder .fas {
-        margin: 0 10px 0 0;
-      }
-      
-      /* 
-      block
-      ----- 
-      */
-      .bg {
         box-shadow: 7.5px 7.5px 3.75px #42546c42;
         border-radius: 25px;
         color: #d8e1e7;
         background-color:#334155;
-      }
+    }
 
-
-      .block {
+    /* page sector
+    */
+    .sector {
         margin-left: 4rem;
         padding: 60px 0;
-        border-bottom: 2px solid #334155 ;
-      }
-      
-      /* 
-      about
-      ----- 
-      */
+        border-bottom: 2px solid #334155 ; /*?*/
+        background-image: url("/public/im/stars_bg.jpg");
+    }
 
-      .aboutBlock .contentHolder {
+    /* home
+    */
+    .user-img-container {
+        width:200px;
+        height: auto;
+    }
 
-        position: relative;
-        text-align: center;
-      }
-      
-      .aboutBlock .icon {
-        position: relative;
-        font-size: 40px;
-        color: #1890ff;
-        margin: 0 0 10px;
-      }
-      
-      .aboutBlock .content {
-        text-align: center;
-      }
-
-      .aboutBlock {
-        margin-left:5.75rem
-      }
-      
-      /* 
-      how it works
-      ------------
-      */
-      .worksBlock {
-        
-        background-position: 50% 0;
-        background-size: cover;
-        background-attachment: fixed;
-        color: #fff;
-        position: relative;
-      }
-      
-      .worksBlock:before {
-        content: '';
-        background: rgba(0, 0, 0, 0.5);
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-      }
-      
-      .worksBlock h2 {
-        color: #fff;
-      }
-      
-      .worksBlock .contentHolder {
-        text-align: center;
-      }
-      
-      .worksBlock .contentHolder button {
-        font-size: 40px;
-        line-height: 1;
-        background: none;
-        border: 1px solid #fff;
-        color: #fff;
-        padding: 30px;
+    .user-img {
+        display: block;   
+        max-width:100%;
+        max-height:100%;
         border-radius: 50%;
-        width: 110px;
-        height: 110px;
-      }
-      
-      /* 
-      faqs
-      ----
-      */
-      .faqBlock .ant-collapse {
-        margin: 0 0 40px;
-      }
-      
-      .faqBlock .quickSupport {
-        text-align: center;
-        max-width: 740px;
-        margin: auto;
-      }
-      
-      .faqBlock .fas {
-        margin: 0 10px 0 0;
-      }
-      
-      /* 
-      pricing block
-      -------------
-      */
-      .pricingBlock .ant-list {
-        text-align: center;
-      }
-      
-      .pricingBlock .ant-row > div:nth-child(2) .ant-list-item {
-        box-shadow: 0 0 12px 2px #f3f3f3;
-        transform: scale(1.1);
-        position: relative;
-        z-index: 1;
-      }
-      
-      .pricingBlock .ant-card-head-title {
-        text-transform: uppercase;
-        font-size: 20px;
-        font-weight: 400;
-      }
-      
-      .pricingBlock .large {
-        font-size: 38px;
-        line-height: 1;
-        margin: 0 0 20px;
-      }
-      
-      .pricingBlock .fab {
-        margin: 0 10px 0 0;
-      }
-      
-      /* 
-      contact
-      -------
-      */
-      .contactBlock .ant-form {
-        max-width: 640px;
-        margin: auto;
-      }
-      
-      .contactBlock .ant-form textarea {
-        min-height: 120px;
-        height: 120px;
-      }
-      
-      /* 
-      footer
-      ------
-      */
-      .ant-layout-footer {
-        background: #111 !important;
-        color: #fff !important;
-        padding: 60px 0 !important;
-        text-align: center;
-      }
-      
-      .footer .logo {
-        font-size: 22px;
-        text-transform: uppercase;
-        margin: 0 0 20px;
-      }
-      
-      .footer .fas {
-        color: #1890ff;
-        font-size: 28px;
-        margin: 0 5px 0 0;
-      }
-      
-      .footer .logo a {
-        color: #fff;
-      }
-      
-      .footer .socials {
-        list-style: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-        font-size: 24px;
-      }
-      
-      /**/
-      .footer .socials li {
-        margin: 0 20px;
-      }
-      
-      .footer .socials a {
-        color: #fff;
-      }
-      
-      .footer .socials a:hover {
-        color: #1890ff;
-      }
-      
-      .footer .goTop:hover {
-        opacity: 0.7;
-      }
-      
-      .mobileVisible {
-        display: none;
-      }
-      
-      .mobileHidden {
-        display: block;
-      }
-      
-      /* 
-      responsive
-      ----------
-      */
-      @media only screen and (max-width: 991px) {
-        .pricingBlock .ant-row > div:nth-child(2) .ant-list-item {
-          transform: scale(1.14);
-        }
-      }
-      
-      @media only screen and (max-width: 767px) {
-        .pricingBlock .ant-row > div:nth-child(2) .ant-list-item {
-          transform: scale(1);
-        }
-      
-        .mobileVisible {
-          display: block;
-        }
-        
-        .mobileHidden {
-          display: none;
-        }
-      }
-      
-      .centered-im {
+    }
+
+    .user-name {
+      /*font-weight: bold;*/
+      display: flex;
+      margin-right: auto;
+    }
+
+    .user-info {
+      margin-left:2%;
+    }
+
+
+    .centered {
         text-align: center;
         display: table;
         margin: 0 auto;
-      }
+    }
 
-      .content-box {
-        text-align: center;
-        position: relative;
-        display: inline;
-        padding-top: 55%;
-        padding-bottom: 55%;
-      }
+    .title {
+        font-size: 28px;
+    }
 
-      .box-text {
+    .subtitle {
+        font-size: 20px;
+        margin-bottom: 1%;
+    }
+     
+    /* works
+    */
+    .box-text {
         position: relative; 
         display: block;
         padding-bottom: 5%;
-      }
-
-      
+    }
       
 }
