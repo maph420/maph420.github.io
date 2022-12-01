@@ -5,8 +5,6 @@ import AppHome from "./components/Home";
 import AppWorks from "./components/Works";
 
 const Content = Layout;
-
-
 export default function App() {
   return (
     <div className="flex">
