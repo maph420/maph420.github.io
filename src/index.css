@@ -13,6 +13,13 @@
             @apply absolute w-auto h-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md text-white bg-gray-900 text-xs font-bold transition-all duration-100 scale-0 origin-left;
         }
 
+        .loading-spinner{
+            width: 20%;
+            height: 20%;
+            margin: 0 auto;
+            margin-top:10rem;
+        }
+
         /* general settings
         */
         html {
@@ -20,6 +27,7 @@
         }
 
         body {
+            background-color: #10121E;
             font-size: 16px;
             line-height: 1.6;
             color: #333;
