@@ -12,6 +12,10 @@ import streamlitLogo from "../im/stack/streamlit.png";
 import mySQLLogo from "../im/stack/mySQLL.png";
 import PHPLogo from "../im/stack/php.png";
 import haskellLogo from "../im/stack/haskell.png";
+import expressLogo from "../im/stack/expressJS.png";
+
+
+
 
 const anotherStack = [
   {
@@ -62,7 +66,14 @@ const anotherStack = [
     im: mySQLLogo,
     name: "MySQL",
   },
+  {
+    im: expressLogo,
+    name: "expressJS"
+  }
 ];
+
+
+
 
 const StackRow = ({ stack }) => (
   <div class="stack-div">
@@ -71,11 +82,18 @@ const StackRow = ({ stack }) => (
         title={stackElem.name}
         class="stack-logo"
         src={`${stackElem.im}`}
-        alt="stack element"
+        alt={stackElem.name}
       ></img>
     ))}
   </div>
 );
+
+
+
+const myStyle = {
+  fill: "whitesmoke",
+  width: "60px"
+};
 
 function AppHome() {
   return (
@@ -91,6 +109,9 @@ function AppHome() {
           <p class="user-text">👤 18 yo</p>
           <p class="user-text">📚 My current stack contains:</p>
 
+          
+
+          
           <StackRow stack={anotherStack}></StackRow>
         </div>
       </div>
