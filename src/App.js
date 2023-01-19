@@ -4,9 +4,19 @@ import { Layout } from "antd";
 import AppHome from "./components/Home";
 import AppWorks from "./components/Works";
 import { useEffect, useState } from "react";
-import { MinimalSpinner } from "loading-animations-react";
+import BarLoader from "react-spinners/BarLoader";
 
 const Content = Layout;
+
+const spinnerStyle = {
+  position: "fixed", top: "50%", left: "50%", transform: "translate(-50%, -50%)" 
+};
+const legendStyle = {
+  color: "whitesmoke",
+  textAlign: "center",
+  marginBottom: "10%"
+};
+
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -27,7 +37,10 @@ export default function App() {
           </Content>
         </div>
       ) : (
-        <MinimalSpinner className="loading-spinner" color="white" />
+        <div style={spinnerStyle}>
+          <legend style={legendStyle}>Loading...</legend>
+          <BarLoader color={"#123abc"}/>
+        </div>
       )}
     </>
   );

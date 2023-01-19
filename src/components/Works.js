@@ -1,8 +1,11 @@
 import React from "react";
+import FadeIn from 'react-fade-in';
+
 
 function AppWorks() {
   return (
     <div id="works" className="sector">
+      <FadeIn>
       <div className="info-box">
         <div className="centered">
           <h2 class="title">Works</h2>
@@ -77,6 +80,7 @@ function AppWorks() {
           </div>
         </div>
       </div>
+      </FadeIn>
     </div>
   );
 }

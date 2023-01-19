@@ -6,17 +6,27 @@
   /* tailwind sidebar
         */
   .sidebar-icon {
-    @apply relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto hover:bg-green-500 bg-slate-600 rounded-xl hover:rounded-3xl transition-all duration-300 ease-linear cursor-pointer;
+    @apply relative flex items-center justify-center h-12 sidebar-icon-width mt-2 mb-2 mx-auto hover:bg-green-500 bg-slate-600 rounded-xl hover:rounded-3xl transition-all duration-300 ease-linear cursor-pointer;
   }
   .sidebar-tooltip {
     @apply absolute w-auto h-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md text-white bg-gray-900 text-xs font-bold transition-all duration-100 scale-0 origin-left;
   }
 
+  .sidebar-width {
+    width: 4rem
+  }
+
+  .sidebar-icon-width {
+    width: 3rem
+  }
+
   .loading-spinner {
     width: 20%;
     height: 20%;
-    margin: 0 auto;
-    margin-top: 10rem;
+    position: absolute;
+    left: 50vw;
+    bottom: 50vh;
+    transform: translate(-50%, 50%);
   }
 
   /* general settings
@@ -51,6 +61,9 @@
     display: table;
     margin: 0 auto;
   }
+
+
+
 
   /* scrollbar
         */
@@ -219,12 +232,7 @@
       height: 6%;
     }
 
-    .loading-spinner {
-    width: 20%;
-    height: 20%;
-    margin: 0 auto;
-    margin-top: 15rem;
-    }
+   
 
   }
   @media screen and (max-width: 1100px) and (min-width: 1000px) {
@@ -242,12 +250,7 @@
       width: 6.5%;
       height: 6.5%;
     }
-    .loading-spinner {
-    width: 20%;
-    height: 20%;
-    margin: 0 auto;
-    margin-top: 15rem;
-    }
+  
 
   }
   @media screen and (max-width: 1000px) and (min-width: 900px) {
@@ -265,12 +268,7 @@
       width: 6.5%;
       height: 6.5%;
     }
-    .loading-spinner {
-    width: 20%;
-    height: 20%;
-    margin: 0 auto;
-    margin-top: 15rem;
-    }
+    
   }
   @media screen and (max-width: 900px) and (min-width: 800px) {
     .user-img-container {
@@ -287,12 +285,9 @@
       width: 7.5%;
       height: 7.5%;
     }
-    .loading-spinner {
-    width: 20%;
-    height: 20%;
-    margin: 0 auto;
-    margin-top: 15rem;
-    }
+
+    
+    
   }
 
   @media screen and (max-width: 800px) and (min-width: 700px) {
@@ -310,12 +305,8 @@
       width: 8%;
       height: 8%;
     }
-    .loading-spinner {
-    width: 20%;
-    height: 20%;
-    margin: 0 auto;
-    margin-top: 16.5rem;
-    }
+    
+   
   }
 
   @media screen and (max-width: 700px) and (min-width: 600px){
@@ -336,12 +327,8 @@
       width: 9%;
       height: 9%;
     }
-    .loading-spinner {
-    width: 30%;
-    height: 30%;
-    margin: 0 auto;
-    margin-top: 15.5rem;
-    }
+   
+  
   }
 
 
@@ -361,12 +348,7 @@
       width: 9.5%;
       height: 9.5%;
     }
-    .loading-spinner {
-    width: 35%;
-    height: 35%;
-    margin: 0 auto;
-    margin-top: 15.5rem;
-    }
+  
   }
 
   @media screen and (max-width: 500px) and (min-width: 400px) {
@@ -384,12 +366,8 @@
       width: 13.5%;
       height: 13.5%;
     }
-    .loading-spinner {
-    width: 35%;
-    height: 35%;
-    margin: 0 auto;
-    margin-top: 16.5rem;
-    }
+   
+   
   }
 
   @media screen and (max-width: 400px) and (min-width: 325px) {
@@ -407,12 +385,8 @@
       width: 15%;
       height: 15%;
     }
-    .loading-spinner {
-    width: 45%;
-    height: 45%;
-    margin: 0 auto;
-    margin-top: 16.5rem;
-    }
+   
+ 
   }   /**/
 
   @media screen and (max-width: 325px) and (min-width:250px) {
@@ -431,12 +405,8 @@
       width: 30%;
       height: 30%;
     }
-    .loading-spinner {
-    width: 55%;
-    height: 55%;
-    margin: 0 auto;
-    margin-top: 16.5rem;
-    }
+ 
+
   }
 
   @media screen and (max-width: 250px) and (min-width:200px) {
@@ -456,12 +426,9 @@
       margin-right: 5%;
       margin: 4% 5%;
     }
-    .loading-spinner {
-    width: 55%;
-    height: 55%;
-    margin: 0 auto;
-    margin-top: 16.5rem;
-    }
+
+ 
+
   }
   /* bue man no va a ser responsive para microondas */
   @media screen and (max-width: 200px) {
@@ -482,11 +449,7 @@
       margin-right: 5%;
       margin: 4% 5%;
     }
-    .loading-spinner {
-    width: 65%;
-    height: 65%;
-    margin: 0 auto;
-    margin-top: 16.5rem;
-    }
+
+
   }
 }

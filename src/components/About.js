@@ -1,8 +1,10 @@
 import React from "react";
+import FadeIn from 'react-fade-in';
 
 function AppAbout() {
   return (
     <div id="about" className="sector">
+      <FadeIn>
       <div className="info-box">
         <div className="centered title">
           <h2>About me</h2>
@@ -22,7 +24,9 @@ function AppAbout() {
           </div>
         </div>
       </div>
+      </FadeIn>
     </div>
+    
   );
 }
 

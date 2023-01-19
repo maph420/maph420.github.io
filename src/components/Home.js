@@ -14,8 +14,7 @@ import PHPLogo from "../im/stack/php.png";
 import haskellLogo from "../im/stack/haskell.png";
 import expressLogo from "../im/stack/expressJS.png";
 
-
-
+import FadeIn from 'react-fade-in';
 
 const anotherStack = [
   {
@@ -90,31 +89,30 @@ const StackRow = ({ stack }) => (
 
 
 
-const myStyle = {
-  fill: "whitesmoke",
-  width: "60px"
-};
-
 function AppHome() {
   return (
     <div id="home" className="sector">
+      <FadeIn>
       <div className="info-box">
+        
         <div class="user-img-container">
           <img class="user-img" src={pfp} alt="profile pic" />
         </div>
-
+        
         <div class="user-info">
+      
           <h2 class="user-name title">maph420</h2>
           <p class="user-text subtitle">‍💻 IT Technician</p>
           <p class="user-text">👤 18 yo</p>
           <p class="user-text">📚 My current stack contains:</p>
+      
 
-          
-
-          
+       
           <StackRow stack={anotherStack}></StackRow>
+          
         </div>
       </div>
+      </FadeIn>
     </div>
   );
 }

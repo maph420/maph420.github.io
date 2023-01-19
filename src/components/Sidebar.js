@@ -4,7 +4,7 @@ import { FaRegFolderOpen } from "react-icons/fa";
 
 const Sidebar = () => {
   return (
-    <div className="fixed top-0 left-0 h-screen m-0 flex flex-col bg-primary text-secondary sidebar-class w-16">
+    <div className="fixed top-0 left-0 h-screen m-0 flex flex-col bg-primary text-secondary sidebar-class sidebar-width">
       <SideBarIcon icon={<FaHome size="28" />} text="Home" anchor="#home" />
       <SideBarIcon
         icon={<BsPersonCircle size="28" />}
