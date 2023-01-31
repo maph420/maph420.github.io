@@ -42,13 +42,14 @@
     color: #333;
   }
 
-  p {
+  p {max-width: 100%;
     font-size: 16px;
     line-height: 1.6;
+    text-align: left;
   }
 
   .title {
-    font-size: 28px;
+    font-size: 30px;
   }
 
   .subtitle {
@@ -57,13 +58,33 @@
   }
 
   .centered {
-    text-align: center;
+    text-align: left;
     display: table;
     margin: 0 auto;
   }
 
+  .about-me-title {
+    font-size: 32px;
 
+  }
 
+  .link {
+    color: #16a085;
+    -webkit-transition: color .5s linear;
+  -moz-transition: color .5s linear;
+  -ms-transition: color .5s linear;
+  -o-transition: color .5s linear;
+  transition: color .5s linear;
+  }
+
+  .link:hover { color: #e74c3c; }
+
+  .bottom-icons {
+    background-color: #16a085;
+    position: relative;
+    top: 55%;
+    width: 100%;
+  }
 
   /* scrollbar
         */
@@ -86,10 +107,11 @@
   .info-box {
     display: flex;
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 70%;
+   
     padding-top: 0px;
     padding: 1%;
-    height: 100%;
+
     overflow-x: visible;
 
     box-shadow: 7.5px 7.5px 3.75px #42546c42;
@@ -104,10 +126,12 @@
     width: auto;
     margin-left: 4rem;
     padding: 60px 0;
-    border-bottom: 2px solid #334155; /*?*/
+    border-bottom: 2px solid #3341552a; /* this are the lines that divide the sectors*/
     background-image: url("im/stars_bg.jpg");
     overflow: visible;
   }
+
+
 
   /* home
         */
@@ -152,7 +176,6 @@
   .box-text {
     position: relative;
     display: block;
-    padding-bottom: 5%;
   }
 
   /* responsive icon ;(
