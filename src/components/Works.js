@@ -19,7 +19,7 @@ function AppWorks() {
             />
             </div>
             <div className="box-text">
-              <p>
+              <p className="about-me-text">
                 This is a school project which main goal is to implement the famous "four in a row game" as an
                 interactable web application. It's hosted on a virtualized docker container and the local PHP environment 
                 is deployed using ddev. The web framework used is Laravel and all the logic is written in PHP.
@@ -44,7 +44,7 @@ function AppWorks() {
             </div>
 
             <div className="box-text">
-              <p>
+              <p className="about-me-text">
                 Another school assignment where we handle the interactions between 2 sockets, a server and a client. Each socket has their respective script and runs in its independant process.
 
                 If the client wants to send data to the server, it must authenticate and server will respond with 
