@@ -8,15 +8,16 @@ function AppWorks() {
       <FadeIn>
       <div className="info-box">
         <div className="centered">
-          <h2 class="title">Works</h2>
+          <h2 class="title">My works</h2>
 
           <div className="box">
             <h3 class="work-subtitle">Four in a row</h3>
+            <div className="frame">
             <img
-              className="centered"
+              className="centered framed"
               src="https://camo.githubusercontent.com/a5e5cee940e80455f6ece90e48bb2a0f9025723e28689935b74a4241b3dda909/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3637363939333637373730343239383531392f3938313738303730383033303833363832362f63756174726f656e6c696e65616c61726176656c2e504e47"
             />
-
+            </div>
             <div className="box-text">
               <p>
                 This is a school project which main goal is to implement the famous "four in a row game" as an
@@ -27,7 +28,7 @@ function AppWorks() {
                 and even tested using Github continuos integration (Github CI). The only thing missing was
                 merging the scripts with the visual part. You can have a look at it from here:
               </p>
-              <a href="https://github.com/maph420/cuatroenlinea" className="box-text">
+              <a href="https://github.com/maph420/cuatroenlinea" className="box-text link" target="self">
               cuatroenlinea
               </a>
             </div>
@@ -35,10 +36,12 @@ function AppWorks() {
 
           <div className="box">
             <h3 class="work-subtitle">Server-Client socket implementation</h3>
+            <div className="frame">
             <img
-              className="centered"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAt0mqUi7fRd8Wy5KfVBBdglKQ8l14KMV0h5oQwtrktSTafm1snAOON3vw87PKt2P1ig&usqp=CAU"
+              className="centered framed"
+              src="https://f4n3x6c5.stackpathcdn.com/article/socket-programming-in-C-Sharp/Images/SocketInCSharp.jpg"
             />
+            </div>
 
             <div className="box-text">
               <p>
@@ -50,7 +53,7 @@ function AppWorks() {
 
 
               </p>
-              <a href="https://github.com/maph420/CRE-TP1_Sockets" className="box-text">
+              <a href="https://github.com/maph420/CRE-TP1_Sockets" className="box-text link" target="self">
               Server-Client socket implementation
               </a>
             </div>

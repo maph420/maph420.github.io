@@ -21,12 +21,15 @@ const Sidebar = () => {
       icon={<AiFillGithub size="28" />}
       text="Github"
       anchor="https://github.com/maph420"
+      bottomIcon="true"
+      target="self"
       />
+      
     </div>
   );
 };
 
-const SideBarIcon = ({ icon, text = "tooltip", anchor = "#", bottomIcon = false }) => (
+const SideBarIcon = ({ icon, text = "tooltip", anchor = "#", bottomIcon = false, target= "blank"}) => (
   <>
   { bottomIcon === false ? (
   <a href={anchor}>
@@ -35,8 +38,8 @@ const SideBarIcon = ({ icon, text = "tooltip", anchor = "#", bottomIcon = false 
       <span class="sidebar-tooltip group-hover:scale-100">{text}</span>
     </div>
   </a>) : (
-    <a href={anchor} className="bottom-icons">
-    <div className="sidebar-icon group">
+    <a href={anchor} className="bottom-icons" target={target}>
+    <div className="sidebar-icon2 group">
       {icon}
       <span class="sidebar-tooltip group-hover:scale-100">{text}</span>
     </div>
