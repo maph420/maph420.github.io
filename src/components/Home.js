@@ -103,7 +103,7 @@ function AppHome() {
       
           <h2 class="user-name title">maph420</h2>
           <p class="user-text subtitle">‍💻 IT Technician</p>
-          <p class="user-text">👤 18 yo</p>
+          <p class="user-text">👤 19 yo</p>
           <p class="user-text">📚 My current stack contains:</p>
       
 

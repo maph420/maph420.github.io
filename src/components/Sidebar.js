@@ -1,6 +1,7 @@
 import { BsPersonCircle } from "react-icons/bs";
 import { FaHome } from "react-icons/fa";
 import { FaRegFolderOpen } from "react-icons/fa";
+import { AiFillGithub } from "react-icons/ai"
 
 const Sidebar = () => {
   return (
@@ -15,6 +16,11 @@ const Sidebar = () => {
         icon={<FaRegFolderOpen size="28" />}
         text="Works"
         anchor="#works"
+      />
+      <SideBarIcon
+      icon={<AiFillGithub size="28" />}
+      text="Github"
+      anchor="https://github.com/maph420"
       />
     </div>
   );
@@ -34,6 +40,7 @@ const SideBarIcon = ({ icon, text = "tooltip", anchor = "#", bottomIcon = false 
       {icon}
       <span class="sidebar-tooltip group-hover:scale-100">{text}</span>
     </div>
+    
   </a>
   )}
   </>
